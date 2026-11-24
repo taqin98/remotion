@@ -201,6 +201,12 @@ declare module "three" {
 
   export class DirectionalLight extends Light {
     constructor(color?: ColorRepresentation, intensity?: number);
+    shadow: {
+      mapSize: Vector2;
+      bias: number;
+      radius: number;
+      camera: OrthographicCamera;
+    };
   }
 
   export class HemisphereLight extends Light {
@@ -237,6 +243,10 @@ declare module "three" {
 
   export class OrthographicCamera extends Camera {
     constructor();
+    left: number;
+    right: number;
+    top: number;
+    bottom: number;
   }
 
   export class Scene extends Object3D {

@@ -52,10 +52,78 @@ import {
   RotatingConcentricTorusRings4K,
   rotatingConcentricTorusRings4KSchema,
 } from "./compositions/RotatingConcentricTorusRings4K";
+import {
+  KineticBalanceSpheres4K,
+  kineticBalanceSpheres4KSchema,
+} from "./compositions/KineticBalanceSpheres4K";
+import {
+  ChamferedCubeHorizon4K,
+  chamferedCubeHorizon4KSchema,
+} from "./compositions/ChamferedCubeHorizon4K";
+import {
+  SlidingArchitecturalPanels4K,
+  slidingArchitecturalPanels4KSchema,
+} from "./compositions/SlidingArchitecturalPanels4K";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="SlidingArchitecturalPanels4K"
+        component={SlidingArchitecturalPanels4K}
+        durationInFrames={360}
+        fps={30}
+        width={3840}
+        height={2160}
+        schema={slidingArchitecturalPanels4KSchema}
+        defaultProps={{
+          themePreset: "clean-corporate",
+          aspectRatio: "16:9",
+          backgroundColor: "#F8FAFC",
+          primaryColor: "#E2E8F0",
+          secondaryColor: "#CBD5E1",
+          accentColor: "#3B82F6",
+          slideAmplitude: 1,
+          speedMultiplier: 1,
+        }}
+      />
+      <Composition
+        id="ChamferedCubeHorizon4K"
+        component={ChamferedCubeHorizon4K}
+        durationInFrames={360}
+        fps={30}
+        width={3840}
+        height={2160}
+        schema={chamferedCubeHorizon4KSchema}
+        defaultProps={{
+          themePreset: "dark-tech" as const,
+          aspectRatio: "16:9" as const,
+          backgroundColor: "#F8FAFC",
+          primaryColor: "#E2E8F0",
+          secondaryColor: "#CBD5E1",
+          accentColor: "#3B82F6",
+          waveAmplitude: 0.85,
+          speedMultiplier: 1,
+        }}
+      />
+      <Composition
+        id="KineticBalanceSpheres4K"
+        component={KineticBalanceSpheres4K}
+        durationInFrames={360}
+        fps={30}
+        width={3840}
+        height={2160}
+        schema={kineticBalanceSpheres4KSchema}
+        defaultProps={{
+          themePreset: "warm-minimalist",
+          aspectRatio: "16:9",
+          backgroundColor: "#FAF6F0",
+          primaryColor: "#E07A5F",
+          secondaryColor: "#D4A373",
+          accentColor: "#F2CC8F",
+          speedMultiplier: 1,
+        }}
+      />
       <Composition
         id="RotatingConcentricTorusRings4K"
         component={RotatingConcentricTorusRings4K}
@@ -159,7 +227,7 @@ export const RemotionRoot: React.FC = () => {
         height={2160}
         schema={commercialArchGeometry4KSchema}
         defaultProps={{
-          themePreset: "warm-minimalist" as const,
+          themePreset: "monochrome-luxury" as const,
           backgroundColor: "#F8FAFC",
           primaryColor: "#1E293B",
           secondaryColor: "#3B82F6",
