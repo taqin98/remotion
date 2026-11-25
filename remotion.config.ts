@@ -9,6 +9,8 @@ import { Config } from "@remotion/cli/config";
 
 Config.setRspack(true);
 Config.setVideoImageFormat("jpeg");
+Config.setJpegQuality(90);
+Config.setConcurrency(2);
 Config.setOverwriteOutput(true);
 Config.setDefaultPremountInSeconds(2);
 Config.setBrowserExecutable(

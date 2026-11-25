@@ -1,5 +1,5 @@
 import React from "react";
-import { Composition } from "remotion";
+import { Composition, Folder } from "remotion";
 import {
   WhiteSilverWaveLoop,
   whiteSilverWaveLoopSchema,
@@ -68,10 +68,300 @@ import {
   RibbonWaveSculpture4K,
   ribbonWaveSculpture4KSchema,
 } from "./compositions/RibbonWaveSculpture4K";
+import {
+  FloatingSteppingStones4K,
+  floatingSteppingStones4KSchema,
+} from "./compositions/FloatingSteppingStones4K";
+import {
+  SoftFoldedPaperLandscape4K,
+  softFoldedPaperLandscape4KSchema,
+} from "./compositions/SoftFoldedPaperLandscape4K";
+import {
+  PlexusNeuralConstellation4K,
+  plexusNeuralConstellation4KSchema,
+} from "./compositions/PlexusNeuralConstellation4K";
+import {
+  IsometricDataPillarMatrix4K,
+  isometricDataPillarMatrix4KSchema,
+} from "./compositions/IsometricDataPillarMatrix4K";
+import {
+  InfiniteWireframeDataTunnel4K,
+  infiniteWireframeDataTunnel4KSchema,
+} from "./compositions/InfiniteWireframeDataTunnel4K";
+import {
+  HexagonalCyberWaveGrid4K,
+  hexagonalCyberWaveGrid4KSchema,
+} from "./compositions/HexagonalCyberWaveGrid4K";
+import {
+  RotatingDottedDigitalGlobe4K,
+  rotatingDottedDigitalGlobe4KSchema,
+} from "./compositions/RotatingDottedDigitalGlobe4K";
+import {
+  BinaryVoxelStream4K,
+  binaryVoxelStream4KSchema,
+} from "./compositions/BinaryVoxelStream4K";
+import {
+  LowPolyCyberTerrainFlyover4K,
+  lowPolyCyberTerrainFlyover4KSchema,
+} from "./compositions/LowPolyCyberTerrainFlyover4K";
+import {
+  QuantumCoreGyroscope4K,
+  quantumCoreGyroscope4KSchema,
+} from "./compositions/QuantumCoreGyroscope4K";
+import {
+  CircuitTraceLightPulses4K,
+  circuitTraceLightPulses4KSchema,
+} from "./compositions/CircuitTraceLightPulses4K";
+import {
+  HarmonicSineWaveBars4K,
+  harmonicSineWaveBars4KSchema,
+} from "./compositions/HarmonicSineWaveBars4K";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Folder name="Tech">
+        <Composition
+          id="HarmonicSineWaveBars4K"
+          component={HarmonicSineWaveBars4K}
+          durationInFrames={360}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={harmonicSineWaveBars4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "#050B1A",
+            primaryColor: "#162033",
+            secondaryColor: "#38BDF8",
+            accentColor: "#22D3EE",
+            waveAmplitude: 1,
+            speedMultiplier: 1,
+            strokeWidth: 1,
+          }}
+        />
+        <Composition
+          id="CircuitTraceLightPulses4K"
+          component={CircuitTraceLightPulses4K}
+          durationInFrames={360}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={circuitTraceLightPulses4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "#050B1A",
+            primaryColor: "#162033",
+            secondaryColor: "#38BDF8",
+            accentColor: "#22D3EE",
+            boardTilt: 0.16,
+            speedMultiplier: 1,
+            strokeWidth: 1,
+          }}
+        />
+        <Composition
+          id="QuantumCoreGyroscope4K"
+          component={QuantumCoreGyroscope4K}
+          durationInFrames={360}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={quantumCoreGyroscope4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "#050B1A",
+            primaryColor: "#334155",
+            secondaryColor: "#38BDF8",
+            accentColor: "#22D3EE",
+            horizontalOffset: 2.85,
+            speedMultiplier: 1,
+            strokeWidth: 1,
+          }}
+        />
+        <Composition
+          id="LowPolyCyberTerrainFlyover4K"
+          component={LowPolyCyberTerrainFlyover4K}
+          durationInFrames={360}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={lowPolyCyberTerrainFlyover4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "#040917",
+            primaryColor: "#0F172A",
+            secondaryColor: "#38BDF8",
+            accentColor: "#22D3EE",
+            terrainAmplitude: 1,
+            speedMultiplier: 1,
+            strokeWidth: 1,
+          }}
+        />
+        <Composition
+          id="BinaryVoxelStream4K"
+          component={BinaryVoxelStream4K}
+          durationInFrames={360}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={binaryVoxelStream4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "#050B1A",
+            primaryColor: "#162033",
+            secondaryColor: "#38BDF8",
+            accentColor: "#22D3EE",
+            streamSpread: 1,
+            speedMultiplier: 1,
+            strokeWidth: 1,
+          }}
+        />
+        <Composition
+          id="RotatingDottedDigitalGlobe4K"
+          component={RotatingDottedDigitalGlobe4K}
+          durationInFrames={360}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={rotatingDottedDigitalGlobe4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "#050B1A",
+            primaryColor: "#38BDF8",
+            secondaryColor: "#6366F1",
+            accentColor: "#22D3EE",
+            globeOffset: 2.95,
+            speedMultiplier: 1,
+            strokeWidth: 1,
+          }}
+        />
+        <Composition
+          id="HexagonalCyberWaveGrid4K"
+          component={HexagonalCyberWaveGrid4K}
+          durationInFrames={360}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={hexagonalCyberWaveGrid4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "#050B1A",
+            primaryColor: "#162033",
+            secondaryColor: "#38BDF8",
+            accentColor: "#22D3EE",
+            waveAmplitude: 0.9,
+            speedMultiplier: 1,
+            strokeWidth: 1,
+          }}
+        />
+        <Composition
+          id="InfiniteWireframeDataTunnel4K"
+          component={InfiniteWireframeDataTunnel4K}
+          durationInFrames={360}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={infiniteWireframeDataTunnel4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "#040917",
+            primaryColor: "#38BDF8",
+            secondaryColor: "#6366F1",
+            accentColor: "#22D3EE",
+            tunnelTwist: 1,
+            speedMultiplier: 1,
+            strokeWidth: 1,
+          }}
+        />
+        <Composition
+          id="IsometricDataPillarMatrix4K"
+          component={IsometricDataPillarMatrix4K}
+          durationInFrames={360}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={isometricDataPillarMatrix4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "#050B1A",
+            primaryColor: "#162033",
+            secondaryColor: "#1E293B",
+            accentColor: "#22D3EE",
+            waveAmplitude: 0.75,
+            speedMultiplier: 1,
+            strokeWidth: 1,
+          }}
+        />
+        <Composition
+          id="PlexusNeuralConstellation4K"
+          component={PlexusNeuralConstellation4K}
+          durationInFrames={360}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={plexusNeuralConstellation4KSchema}
+          defaultProps={{
+            themePreset: "warm-minimalist" as const,
+            aspectRatio: "16:9" as const,
+            backgroundColor: "#050B1A",
+            primaryColor: "#38BDF8",
+            secondaryColor: "#6366F1",
+            accentColor: "#22D3EE",
+            driftAmplitude: 1,
+            speedMultiplier: 1,
+            strokeWidth: 1,
+          }}
+        />
+      </Folder>
+      <Composition
+        id="SoftFoldedPaperLandscape4K"
+        component={SoftFoldedPaperLandscape4K}
+        durationInFrames={360}
+        fps={30}
+        width={3840}
+        height={2160}
+        schema={softFoldedPaperLandscape4KSchema}
+        defaultProps={{
+          themePreset: "warm-minimalist" as const,
+          aspectRatio: "16:9" as const,
+          backgroundColor: "#F8FAFC",
+          primaryColor: "#E2E8F0",
+          secondaryColor: "#CBD5E1",
+          accentColor: "#3B82F6",
+          foldAmplitude: 1,
+          speedMultiplier: 1,
+          strokeWidth: 1,
+        }}
+      />
+      <Composition
+        id="FloatingSteppingStones4K"
+        component={FloatingSteppingStones4K}
+        durationInFrames={360}
+        fps={30}
+        width={3840}
+        height={2160}
+        schema={floatingSteppingStones4KSchema}
+        defaultProps={{
+          themePreset: "clean-corporate",
+          aspectRatio: "16:9",
+          backgroundColor: "#F8FAFC",
+          primaryColor: "#E2E8F0",
+          secondaryColor: "#CBD5E1",
+          accentColor: "#3B82F6",
+          bobAmplitude: 1,
+          speedMultiplier: 1,
+          strokeWidth: 1,
+        }}
+      />
       <Composition
         id="RibbonWaveSculpture4K"
         component={RibbonWaveSculpture4K}
@@ -120,7 +410,7 @@ export const RemotionRoot: React.FC = () => {
         height={2160}
         schema={chamferedCubeHorizon4KSchema}
         defaultProps={{
-          themePreset: "dark-tech" as const,
+          themePreset: "warm-minimalist" as const,
           aspectRatio: "16:9" as const,
           backgroundColor: "#F8FAFC",
           primaryColor: "#E2E8F0",
@@ -176,7 +466,7 @@ export const RemotionRoot: React.FC = () => {
         height={2160}
         schema={orbitingSmoothPills4KSchema}
         defaultProps={{
-          themePreset: "monochrome-luxury" as const,
+          themePreset: "warm-minimalist" as const,
           aspectRatio: "16:9" as const,
           backgroundColor: "#F8FAFC",
           primaryColor: "#1E293B",
@@ -251,7 +541,7 @@ export const RemotionRoot: React.FC = () => {
         height={2160}
         schema={commercialArchGeometry4KSchema}
         defaultProps={{
-          themePreset: "dark-tech" as const,
+          themePreset: "clean-corporate" as const,
           backgroundColor: "#F8FAFC",
           primaryColor: "#1E293B",
           secondaryColor: "#3B82F6",

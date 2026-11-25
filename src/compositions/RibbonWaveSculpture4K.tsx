@@ -351,7 +351,7 @@ const KeyShadowLight: React.FC<{ color: string; intensity: number }> = ({
     if (!light) {
       return;
     }
-    light.shadow.mapSize.set(2048, 2048);
+    light.shadow.mapSize.set(1024, 1024);
     light.shadow.bias = -0.0004;
     light.shadow.radius = 4;
     light.shadow.camera.left = -12;
@@ -785,14 +785,26 @@ export const RibbonWaveSculpture4K: React.FC<RibbonWaveSculpture4KProps> = (
             />
             <feColorMatrix type="saturate" values="0" />
           </filter>
+          <pattern
+            id="ribbon-grain-pattern"
+            width="256"
+            height="256"
+            patternUnits="userSpaceOnUse"
+          >
+            <rect
+              width="256"
+              height="256"
+              filter="url(#ribbon-grain)"
+              opacity="0.012"
+            />
+          </pattern>
         </defs>
         <rect width={width} height={height} fill="url(#ribbon-bg-grad)" />
         <rect width={width} height={height} fill="url(#ribbon-bg-glow)" />
         <rect
           width={width}
           height={height}
-          filter="url(#ribbon-grain)"
-          opacity="0.012"
+          fill="url(#ribbon-grain-pattern)"
         />
       </svg>
 
