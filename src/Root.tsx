@@ -64,10 +64,34 @@ import {
   SlidingArchitecturalPanels4K,
   slidingArchitecturalPanels4KSchema,
 } from "./compositions/SlidingArchitecturalPanels4K";
+import {
+  RibbonWaveSculpture4K,
+  ribbonWaveSculpture4KSchema,
+} from "./compositions/RibbonWaveSculpture4K";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="RibbonWaveSculpture4K"
+        component={RibbonWaveSculpture4K}
+        durationInFrames={360}
+        fps={30}
+        width={3840}
+        height={2160}
+        schema={ribbonWaveSculpture4KSchema}
+        defaultProps={{
+          themePreset: "clean-corporate",
+          aspectRatio: "16:9",
+          backgroundColor: "#F8FAFC",
+          primaryColor: "#E2E8F0",
+          secondaryColor: "#CBD5E1",
+          accentColor: "#3B82F6",
+          waveAmplitude: 1,
+          speedMultiplier: 1,
+          strokeWidth: 1,
+        }}
+      />
       <Composition
         id="SlidingArchitecturalPanels4K"
         component={SlidingArchitecturalPanels4K}
@@ -227,7 +251,7 @@ export const RemotionRoot: React.FC = () => {
         height={2160}
         schema={commercialArchGeometry4KSchema}
         defaultProps={{
-          themePreset: "monochrome-luxury" as const,
+          themePreset: "dark-tech" as const,
           backgroundColor: "#F8FAFC",
           primaryColor: "#1E293B",
           secondaryColor: "#3B82F6",
