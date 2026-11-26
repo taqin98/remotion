@@ -121,12 +121,24 @@ declare module "three" {
     );
   }
 
+  export const DoubleSide: number;
+
   export class CapsuleGeometry extends BufferGeometry {
     constructor(
       radius?: number,
       length?: number,
       capSegments?: number,
       radialSegments?: number,
+    );
+  }
+
+  export class ConeGeometry extends BufferGeometry {
+    constructor(
+      radius?: number,
+      height?: number,
+      radialSegments?: number,
+      heightSegments?: number,
+      openEnded?: boolean,
     );
   }
 
@@ -145,6 +157,7 @@ declare module "three" {
       wireframe?: boolean;
       transparent?: boolean;
       opacity?: number;
+      side?: number;
     });
     color: Color;
     emissive: Color;
@@ -155,6 +168,50 @@ declare module "three" {
     wireframe: boolean;
     transparent: boolean;
     opacity: number;
+    side: number;
+  }
+
+  export class MeshPhysicalMaterial extends MeshStandardMaterial {
+    constructor(parameters?: {
+      color?: ColorRepresentation;
+      emissive?: ColorRepresentation;
+      emissiveIntensity?: number;
+      roughness?: number;
+      metalness?: number;
+      flatShading?: boolean;
+      wireframe?: boolean;
+      transparent?: boolean;
+      opacity?: number;
+      side?: number;
+      transmission?: number;
+      thickness?: number;
+      ior?: number;
+      clearcoat?: number;
+      clearcoatRoughness?: number;
+      iridescence?: number;
+      iridescenceIOR?: number;
+      iridescenceThicknessRange?: [number, number];
+      reflectivity?: number;
+      sheen?: number;
+      sheenRoughness?: number;
+      sheenColor?: ColorRepresentation;
+      attenuationColor?: ColorRepresentation;
+      attenuationDistance?: number;
+    });
+    transmission: number;
+    thickness: number;
+    ior: number;
+    clearcoat: number;
+    clearcoatRoughness: number;
+    iridescence: number;
+    iridescenceIOR: number;
+    iridescenceThicknessRange: [number, number];
+    reflectivity: number;
+    sheen: number;
+    sheenRoughness: number;
+    sheenColor: Color;
+    attenuationColor: Color;
+    attenuationDistance: number;
   }
 
   export class MeshBasicMaterial extends Material {

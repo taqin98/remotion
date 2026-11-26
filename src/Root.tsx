@@ -116,6 +116,46 @@ import {
   HarmonicSineWaveBars4K,
   harmonicSineWaveBars4KSchema,
 } from "./compositions/HarmonicSineWaveBars4K";
+import {
+  LayeredFrostedGlassCards4K,
+  layeredFrostedGlassCards4KSchema,
+} from "./compositions/LayeredFrostedGlassCards4K";
+import {
+  RefractiveGlassPrisms4K,
+  refractiveGlassPrisms4KSchema,
+} from "./compositions/RefractiveGlassPrisms4K";
+import {
+  IridescentLiquidSpheres4K,
+  iridescentLiquidSpheres4KSchema,
+} from "./compositions/IridescentLiquidSpheres4K";
+import {
+  TranslucentAcrylicRings4K,
+  translucentAcrylicRings4KSchema,
+} from "./compositions/TranslucentAcrylicRings4K";
+import {
+  ChromaticGlassLouvers4K,
+  chromaticGlassLouvers4KSchema,
+} from "./compositions/ChromaticGlassLouvers4K";
+import {
+  FloatingGlassHexagons4K,
+  floatingGlassHexagons4KSchema,
+} from "./compositions/FloatingGlassHexagons4K";
+import {
+  VelvetGoldLuxuryWaves4K,
+  velvetGoldLuxuryWaves4KSchema,
+} from "./compositions/VelvetGoldLuxuryWaves4K";
+import {
+  MinimalistBauhausKineticMobile4K,
+  minimalistBauhausKineticMobile4KSchema,
+} from "./compositions/MinimalistBauhausKineticMobile4K";
+import {
+  SoftPearlBubblesDrift4K,
+  softPearlBubblesDrift4KSchema,
+} from "./compositions/SoftPearlBubblesDrift4K";
+import {
+  AbstractOrigamiHelix4K,
+  abstractOrigamiHelix4KSchema,
+} from "./compositions/AbstractOrigamiHelix4K";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -270,8 +310,8 @@ export const RemotionRoot: React.FC = () => {
           height={2160}
           schema={infiniteWireframeDataTunnel4KSchema}
           defaultProps={{
-            themePreset: "dark-tech",
-            aspectRatio: "16:9",
+            themePreset: "monochrome-luxury" as const,
+            aspectRatio: "16:9" as const,
             backgroundColor: "#040917",
             primaryColor: "#38BDF8",
             secondaryColor: "#6366F1",
@@ -290,8 +330,8 @@ export const RemotionRoot: React.FC = () => {
           height={2160}
           schema={isometricDataPillarMatrix4KSchema}
           defaultProps={{
-            themePreset: "dark-tech",
-            aspectRatio: "16:9",
+            themePreset: "clean-corporate" as const,
+            aspectRatio: "16:9" as const,
             backgroundColor: "#050B1A",
             primaryColor: "#162033",
             secondaryColor: "#1E293B",
@@ -673,6 +713,200 @@ export const RemotionRoot: React.FC = () => {
           grainOpacity: 0.015,
         }}
       />
+      <Folder name="Glass">
+        <Composition
+          id="LayeredFrostedGlassCards4K"
+          component={LayeredFrostedGlassCards4K}
+          durationInFrames={360}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={layeredFrostedGlassCards4KSchema}
+          defaultProps={{
+            themePreset: "clean-corporate" as const,
+            aspectRatio: "16:9" as const,
+            backgroundColor: "#F4F7FC",
+            primaryColor: "#E0ECFF",
+            secondaryColor: "#3B82F6",
+            accentColor: "#A855F7",
+            speedMultiplier: 1,
+            strokeWidth: 1,
+          }}
+        />
+        <Composition
+          id="RefractiveGlassPrisms4K"
+          component={RefractiveGlassPrisms4K}
+          durationInFrames={360}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={refractiveGlassPrisms4KSchema}
+          defaultProps={{
+            themePreset: "clean-corporate" as const,
+            aspectRatio: "16:9" as const,
+            backgroundColor: "#F8FAFC",
+            primaryColor: "#E0F2FE",
+            secondaryColor: "#3B82F6",
+            accentColor: "#06B6D4",
+            speedMultiplier: 1,
+            strokeWidth: 1,
+          }}
+        />
+        <Composition
+          id="IridescentLiquidSpheres4K"
+          component={IridescentLiquidSpheres4K}
+          durationInFrames={360}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={iridescentLiquidSpheres4KSchema}
+          defaultProps={{
+            themePreset: "clean-corporate" as const,
+            aspectRatio: "16:9" as const,
+            backgroundColor: "#F4F7FC",
+            primaryColor: "#E0ECFF",
+            secondaryColor: "#38BDF8",
+            accentColor: "#A855F7",
+            displacementIntensity: 0.14,
+            speedMultiplier: 1,
+            strokeWidth: 1,
+          }}
+        />
+        <Composition
+          id="TranslucentAcrylicRings4K"
+          component={TranslucentAcrylicRings4K}
+          durationInFrames={360}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={translucentAcrylicRings4KSchema}
+          defaultProps={{
+            themePreset: "clean-corporate" as const,
+            aspectRatio: "16:9" as const,
+            backgroundColor: "#F8FAFC",
+            primaryColor: "#E0F2FE",
+            secondaryColor: "#3B82F6",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 1,
+          }}
+        />
+        <Composition
+          id="ChromaticGlassLouvers4K"
+          component={ChromaticGlassLouvers4K}
+          durationInFrames={360}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={chromaticGlassLouvers4KSchema}
+          defaultProps={{
+            themePreset: "clean-corporate" as const,
+            aspectRatio: "16:9" as const,
+            backgroundColor: "#F8FAFC",
+            primaryColor: "#E0F2FE",
+            secondaryColor: "#3B82F6",
+            accentColor: "#EC4899",
+            speedMultiplier: 1,
+            strokeWidth: 1,
+          }}
+        />
+        <Composition
+          id="FloatingGlassHexagons4K"
+          component={FloatingGlassHexagons4K}
+          durationInFrames={360}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={floatingGlassHexagons4KSchema}
+          defaultProps={{
+            themePreset: "clean-corporate" as const,
+            aspectRatio: "16:9" as const,
+            backgroundColor: "#F8FAFC",
+            primaryColor: "#E0F2FE",
+            secondaryColor: "#3B82F6",
+            accentColor: "#0EA5E9",
+            speedMultiplier: 1,
+            strokeWidth: 1,
+          }}
+        />
+        <Composition
+          id="VelvetGoldLuxuryWaves4K"
+          component={VelvetGoldLuxuryWaves4K}
+          durationInFrames={360}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={velvetGoldLuxuryWaves4KSchema}
+          defaultProps={{
+            themePreset: "monochrome-luxury" as const,
+            aspectRatio: "16:9" as const,
+            backgroundColor: "#0B0B0E",
+            primaryColor: "#16161B",
+            secondaryColor: "#D4AF37",
+            accentColor: "#F3D37A",
+            waveAmplitude: 1.05,
+            speedMultiplier: 1,
+            strokeWidth: 1,
+          }}
+        />
+        <Composition
+          id="MinimalistBauhausKineticMobile4K"
+          component={MinimalistBauhausKineticMobile4K}
+          durationInFrames={360}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={minimalistBauhausKineticMobile4KSchema}
+          defaultProps={{
+            themePreset: "warm-minimalist" as const,
+            aspectRatio: "16:9" as const,
+            backgroundColor: "#FAF6EE",
+            primaryColor: "#1D3557",
+            secondaryColor: "#E07A5F",
+            accentColor: "#F4A261",
+            speedMultiplier: 1,
+            strokeWidth: 1,
+          }}
+        />
+        <Composition
+          id="SoftPearlBubblesDrift4K"
+          component={SoftPearlBubblesDrift4K}
+          durationInFrames={360}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={softPearlBubblesDrift4KSchema}
+          defaultProps={{
+            themePreset: "clean-corporate" as const,
+            aspectRatio: "16:9" as const,
+            backgroundColor: "#F8FAFC",
+            primaryColor: "#F8FAFC",
+            secondaryColor: "#DBEAFE",
+            accentColor: "#FCE7F3",
+            speedMultiplier: 1,
+            strokeWidth: 1,
+          }}
+        />
+        <Composition
+          id="AbstractOrigamiHelix4K"
+          component={AbstractOrigamiHelix4K}
+          durationInFrames={360}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={abstractOrigamiHelix4KSchema}
+          defaultProps={{
+            themePreset: "clean-corporate" as const,
+            aspectRatio: "16:9" as const,
+            backgroundColor: "#F8FAFC",
+            primaryColor: "#E2E8F0",
+            secondaryColor: "#3B82F6",
+            accentColor: "#0EA5E9",
+            speedMultiplier: 1,
+            strokeWidth: 1,
+          }}
+        />
+      </Folder>
     </>
   );
 };
