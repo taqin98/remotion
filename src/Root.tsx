@@ -1,6 +1,66 @@
 import React from "react";
 import { Composition, Folder } from "remotion";
 import {
+  DiagonalLowPolyShardSweep4K,
+  diagonalLowPolyShardSweep4KSchema,
+} from "./compositions/DiagonalLowPolyShardSweep4K";
+import {
+  OrigamiPaperFoldReveal4K,
+  origamiPaperFoldReveal4KSchema,
+} from "./compositions/OrigamiPaperFoldReveal4K";
+import {
+  MultiLayerRibbonWipe4K,
+  multiLayerRibbonWipe4KSchema,
+} from "./compositions/MultiLayerRibbonWipe4K";
+import {
+  SteppingStaircaseWipe4K,
+  steppingStaircaseWipe4KSchema,
+} from "./compositions/SteppingStaircaseWipe4K";
+import {
+  PixelBlockDissolveWipe3D4K,
+  pixelBlockDissolveWipe3D4KSchema,
+} from "./compositions/PixelBlockDissolveWipe3D4K";
+import {
+  SpinningCrossPlusGridWipe4K,
+  spinningCrossPlusGridWipe4KSchema,
+} from "./compositions/SpinningCrossPlusGridWipe4K";
+import {
+  KineticChevronArrowSweep4K,
+  kineticChevronArrowSweep4KSchema,
+} from "./compositions/KineticChevronArrowSweep4K";
+import {
+  DominoTileWaveWipe4K,
+  dominoTileWaveWipe4KSchema,
+} from "./compositions/DominoTileWaveWipe4K";
+import {
+  SpiralVortexTileWipe4K,
+  spiralVortexTileWipe4KSchema,
+} from "./compositions/SpiralVortexTileWipe4K";
+import {
+  GlassSlabRefractionWipe4K,
+  glassSlabRefractionWipe4KSchema,
+} from "./compositions/GlassSlabRefractionWipe4K";
+import {
+  HorizontalScanlineBarWipe4K,
+  horizontalScanlineBarWipe4KSchema,
+} from "./compositions/HorizontalScanlineBarWipe4K";
+import {
+  CornerToCornerWedgeWipe4K,
+  cornerToCornerWedgeWipe4KSchema,
+} from "./compositions/CornerToCornerWedgeWipe4K";
+import {
+  ConcentricOctagonTunnelWipe4K,
+  concentricOctagonTunnelWipe4KSchema,
+} from "./compositions/ConcentricOctagonTunnelWipe4K";
+import {
+  MinimalistArcFanWipe4K,
+  minimalistArcFanWipe4KSchema,
+} from "./compositions/MinimalistArcFanWipe4K";
+import {
+  ShatterReassembleGridWipe4K,
+  shatterReassembleGridWipe4KSchema,
+} from "./compositions/ShatterReassembleGridWipe4K";
+import {
   HexagonFlipGridWipe4K,
   hexagonFlipGridWipe4KSchema,
 } from "./compositions/HexagonFlipGridWipe4K";
@@ -763,7 +823,7 @@ export const RemotionRoot: React.FC = () => {
           height={2160}
           schema={layeredFrostedGlassCards4KSchema}
           defaultProps={{
-            themePreset: "clean-corporate" as const,
+            themePreset: "dark-tech" as const,
             aspectRatio: "16:9" as const,
             backgroundColor: "#F4F7FC",
             primaryColor: "#E0ECFF",
@@ -801,7 +861,7 @@ export const RemotionRoot: React.FC = () => {
           height={2160}
           schema={iridescentLiquidSpheres4KSchema}
           defaultProps={{
-            themePreset: "clean-corporate" as const,
+            themePreset: "dark-tech" as const,
             aspectRatio: "16:9" as const,
             backgroundColor: "#F4F7FC",
             primaryColor: "#E0ECFF",
@@ -859,7 +919,7 @@ export const RemotionRoot: React.FC = () => {
           height={2160}
           schema={floatingGlassHexagons4KSchema}
           defaultProps={{
-            themePreset: "clean-corporate" as const,
+            themePreset: "dark-tech" as const,
             aspectRatio: "16:9" as const,
             backgroundColor: "#F8FAFC",
             primaryColor: "#E0F2FE",
@@ -878,7 +938,7 @@ export const RemotionRoot: React.FC = () => {
           height={2160}
           schema={velvetGoldLuxuryWaves4KSchema}
           defaultProps={{
-            themePreset: "monochrome-luxury" as const,
+            themePreset: "clean-corporate" as const,
             aspectRatio: "16:9" as const,
             backgroundColor: "#0B0B0E",
             primaryColor: "#16161B",
@@ -1127,6 +1187,293 @@ export const RemotionRoot: React.FC = () => {
           width={3840}
           height={2160}
           schema={centerSplitSlidingDoorsWipe4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#1E293B",
+            secondaryColor: "#334155",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+      </Folder>
+      <Folder name="Wipes">
+        <Composition
+          id="DiagonalLowPolyShardSweep4K"
+          component={DiagonalLowPolyShardSweep4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={diagonalLowPolyShardSweep4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#1E293B",
+            secondaryColor: "#334155",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="OrigamiPaperFoldReveal4K"
+          component={OrigamiPaperFoldReveal4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={origamiPaperFoldReveal4KSchema}
+          defaultProps={{
+            themePreset: "warm-minimalist",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#F5F0E6",
+            secondaryColor: "#E5DAC8",
+            accentColor: "#D97706",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="MultiLayerRibbonWipe4K"
+          component={MultiLayerRibbonWipe4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={multiLayerRibbonWipe4KSchema}
+          defaultProps={{
+            themePreset: "clean-corporate",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#FFFFFF",
+            secondaryColor: "#E2E8F0",
+            accentColor: "#2563EB",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="SteppingStaircaseWipe4K"
+          component={SteppingStaircaseWipe4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={steppingStaircaseWipe4KSchema}
+          defaultProps={{
+            themePreset: "monochrome-luxury",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#18181B",
+            secondaryColor: "#3F3F46",
+            accentColor: "#E4E4E7",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="PixelBlockDissolveWipe3D4K"
+          component={PixelBlockDissolveWipe3D4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={pixelBlockDissolveWipe3D4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#1E293B",
+            secondaryColor: "#334155",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="SpinningCrossPlusGridWipe4K"
+          component={SpinningCrossPlusGridWipe4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={spinningCrossPlusGridWipe4KSchema}
+          defaultProps={{
+            themePreset: "clean-corporate",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#FFFFFF",
+            secondaryColor: "#E2E8F0",
+            accentColor: "#2563EB",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="KineticChevronArrowSweep4K"
+          component={KineticChevronArrowSweep4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={kineticChevronArrowSweep4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#1E293B",
+            secondaryColor: "#334155",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="DominoTileWaveWipe4K"
+          component={DominoTileWaveWipe4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={dominoTileWaveWipe4KSchema}
+          defaultProps={{
+            themePreset: "warm-minimalist",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#F5F0E6",
+            secondaryColor: "#E5DAC8",
+            accentColor: "#D97706",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="SpiralVortexTileWipe4K"
+          component={SpiralVortexTileWipe4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={spiralVortexTileWipe4KSchema}
+          defaultProps={{
+            themePreset: "monochrome-luxury",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#18181B",
+            secondaryColor: "#3F3F46",
+            accentColor: "#E4E4E7",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="GlassSlabRefractionWipe4K"
+          component={GlassSlabRefractionWipe4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={glassSlabRefractionWipe4KSchema}
+          defaultProps={{
+            themePreset: "clean-corporate",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#FFFFFF",
+            secondaryColor: "#E2E8F0",
+            accentColor: "#2563EB",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="HorizontalScanlineBarWipe4K"
+          component={HorizontalScanlineBarWipe4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={horizontalScanlineBarWipe4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#1E293B",
+            secondaryColor: "#334155",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="CornerToCornerWedgeWipe4K"
+          component={CornerToCornerWedgeWipe4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={cornerToCornerWedgeWipe4KSchema}
+          defaultProps={{
+            themePreset: "clean-corporate",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#FFFFFF",
+            secondaryColor: "#E2E8F0",
+            accentColor: "#2563EB",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="ConcentricOctagonTunnelWipe4K"
+          component={ConcentricOctagonTunnelWipe4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={concentricOctagonTunnelWipe4KSchema}
+          defaultProps={{
+            themePreset: "monochrome-luxury",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#18181B",
+            secondaryColor: "#3F3F46",
+            accentColor: "#E4E4E7",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="MinimalistArcFanWipe4K"
+          component={MinimalistArcFanWipe4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={minimalistArcFanWipe4KSchema}
+          defaultProps={{
+            themePreset: "warm-minimalist",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#F5F0E6",
+            secondaryColor: "#E5DAC8",
+            accentColor: "#D97706",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="ShatterReassembleGridWipe4K"
+          component={ShatterReassembleGridWipe4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={shatterReassembleGridWipe4KSchema}
           defaultProps={{
             themePreset: "dark-tech",
             aspectRatio: "16:9",
