@@ -1,6 +1,46 @@
 import React from "react";
 import { Composition, Folder } from "remotion";
 import {
+  SpinningCrystalEmblemLowerThird4K,
+  spinningCrystalEmblemLowerThird4KSchema,
+} from "./compositions/SpinningCrystalEmblemLowerThird4K";
+import {
+  FrostedGlassPillLowerThird4K,
+  frostedGlassPillLowerThird4KSchema,
+} from "./compositions/FrostedGlassPillLowerThird4K";
+import {
+  FoldingRibbonNameplateLowerThird4K,
+  foldingRibbonNameplateLowerThird4KSchema,
+} from "./compositions/FoldingRibbonNameplateLowerThird4K";
+import {
+  VerticalPillarCapsuleLowerThird4K,
+  verticalPillarCapsuleLowerThird4KSchema,
+} from "./compositions/VerticalPillarCapsuleLowerThird4K";
+import {
+  StackedIsometricBlockLowerThird4K,
+  stackedIsometricBlockLowerThird4KSchema,
+} from "./compositions/StackedIsometricBlockLowerThird4K";
+import {
+  RotatingCubeThinLineLowerThird4K,
+  rotatingCubeThinLineLowerThird4KSchema,
+} from "./compositions/RotatingCubeThinLineLowerThird4K";
+import {
+  CenteredEditorialTitlePlate4K,
+  centeredEditorialTitlePlate4KSchema,
+} from "./compositions/CenteredEditorialTitlePlate4K";
+import {
+  ArchitecturalArchBadgeLowerThird4K,
+  architecturalArchBadgeLowerThird4KSchema,
+} from "./compositions/ArchitecturalArchBadgeLowerThird4K";
+import {
+  DualToneSlidingAccentLowerThird4K,
+  dualToneSlidingAccentLowerThird4KSchema,
+} from "./compositions/DualToneSlidingAccentLowerThird4K";
+import {
+  LuxuryGoldTrimmedSlateLowerThird4K,
+  luxuryGoldTrimmedSlateLowerThird4KSchema,
+} from "./compositions/LuxuryGoldTrimmedSlateLowerThird4K";
+import {
   DiagonalLowPolyShardSweep4K,
   diagonalLowPolyShardSweep4KSchema,
 } from "./compositions/DiagonalLowPolyShardSweep4K";
@@ -1036,8 +1076,8 @@ export const RemotionRoot: React.FC = () => {
           height={2160}
           schema={isometricCubeCurtainWipe4KSchema}
           defaultProps={{
-            themePreset: "dark-tech" as const,
-            aspectRatio: "16:9" as const,
+            themePreset: "monochrome-luxury" as const,
+            aspectRatio: "9:16" as const,
             backgroundColor: "transparent",
             primaryColor: "#FFFFFF",
             secondaryColor: "#E2E8F0",
@@ -1055,8 +1095,8 @@ export const RemotionRoot: React.FC = () => {
           height={2160}
           schema={rotatingVenetianLouversWipe4KSchema}
           defaultProps={{
-            themePreset: "monochrome-luxury",
-            aspectRatio: "16:9",
+            themePreset: "dark-tech" as const,
+            aspectRatio: "16:9" as const,
             backgroundColor: "transparent",
             primaryColor: "#18181B",
             secondaryColor: "#3F3F46",
@@ -1481,6 +1521,198 @@ export const RemotionRoot: React.FC = () => {
             primaryColor: "#1E293B",
             secondaryColor: "#334155",
             accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+      </Folder>
+      <Folder name="CorporateAlpha">
+        <Composition
+          id="SpinningCrystalEmblemLowerThird4K"
+          component={SpinningCrystalEmblemLowerThird4K}
+          durationInFrames={180}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={spinningCrystalEmblemLowerThird4KSchema}
+          defaultProps={{
+            themePreset: "clean-corporate",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#FFFFFF",
+            secondaryColor: "#E2E8F0",
+            accentColor: "#2563EB",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="FrostedGlassPillLowerThird4K"
+          component={FrostedGlassPillLowerThird4K}
+          durationInFrames={180}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={frostedGlassPillLowerThird4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#1E293B",
+            secondaryColor: "#334155",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="FoldingRibbonNameplateLowerThird4K"
+          component={FoldingRibbonNameplateLowerThird4K}
+          durationInFrames={180}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={foldingRibbonNameplateLowerThird4KSchema}
+          defaultProps={{
+            themePreset: "warm-minimalist",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#F5F0E6",
+            secondaryColor: "#E5DAC8",
+            accentColor: "#D97706",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="VerticalPillarCapsuleLowerThird4K"
+          component={VerticalPillarCapsuleLowerThird4K}
+          durationInFrames={180}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={verticalPillarCapsuleLowerThird4KSchema}
+          defaultProps={{
+            themePreset: "clean-corporate",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#FFFFFF",
+            secondaryColor: "#E2E8F0",
+            accentColor: "#2563EB",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="StackedIsometricBlockLowerThird4K"
+          component={StackedIsometricBlockLowerThird4K}
+          durationInFrames={180}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={stackedIsometricBlockLowerThird4KSchema}
+          defaultProps={{
+            themePreset: "monochrome-luxury",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#18181B",
+            secondaryColor: "#3F3F46",
+            accentColor: "#E4E4E7",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="RotatingCubeThinLineLowerThird4K"
+          component={RotatingCubeThinLineLowerThird4K}
+          durationInFrames={180}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={rotatingCubeThinLineLowerThird4KSchema}
+          defaultProps={{
+            themePreset: "clean-corporate",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#FFFFFF",
+            secondaryColor: "#E2E8F0",
+            accentColor: "#2563EB",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="CenteredEditorialTitlePlate4K"
+          component={CenteredEditorialTitlePlate4K}
+          durationInFrames={180}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={centeredEditorialTitlePlate4KSchema}
+          defaultProps={{
+            themePreset: "warm-minimalist",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#F5F0E6",
+            secondaryColor: "#E5DAC8",
+            accentColor: "#D97706",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="ArchitecturalArchBadgeLowerThird4K"
+          component={ArchitecturalArchBadgeLowerThird4K}
+          durationInFrames={180}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={architecturalArchBadgeLowerThird4KSchema}
+          defaultProps={{
+            themePreset: "warm-minimalist",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#F5F0E6",
+            secondaryColor: "#E5DAC8",
+            accentColor: "#D97706",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="DualToneSlidingAccentLowerThird4K"
+          component={DualToneSlidingAccentLowerThird4K}
+          durationInFrames={180}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={dualToneSlidingAccentLowerThird4KSchema}
+          defaultProps={{
+            themePreset: "clean-corporate",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#FFFFFF",
+            secondaryColor: "#E2E8F0",
+            accentColor: "#2563EB",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="LuxuryGoldTrimmedSlateLowerThird4K"
+          component={LuxuryGoldTrimmedSlateLowerThird4K}
+          durationInFrames={180}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={luxuryGoldTrimmedSlateLowerThird4KSchema}
+          defaultProps={{
+            themePreset: "monochrome-luxury",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#18181B",
+            secondaryColor: "#27272A",
+            accentColor: "#D4AF37",
             speedMultiplier: 1,
             strokeWidth: 2,
           }}
