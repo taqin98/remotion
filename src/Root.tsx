@@ -190,8 +190,8 @@ export const RemotionRoot: React.FC = () => {
           height={2160}
           schema={circuitTraceLightPulses4KSchema}
           defaultProps={{
-            themePreset: "dark-tech",
-            aspectRatio: "16:9",
+            themePreset: "clean-corporate" as const,
+            aspectRatio: "16:9" as const,
             backgroundColor: "#050B1A",
             primaryColor: "#162033",
             secondaryColor: "#38BDF8",
@@ -230,8 +230,8 @@ export const RemotionRoot: React.FC = () => {
           height={2160}
           schema={lowPolyCyberTerrainFlyover4KSchema}
           defaultProps={{
-            themePreset: "dark-tech",
-            aspectRatio: "16:9",
+            themePreset: "monochrome-luxury" as const,
+            aspectRatio: "16:9" as const,
             backgroundColor: "#040917",
             primaryColor: "#0F172A",
             secondaryColor: "#38BDF8",
