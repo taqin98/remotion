@@ -1,6 +1,46 @@
 import React from "react";
 import { Composition, Folder } from "remotion";
 import {
+  HexagonFlipGridWipe4K,
+  hexagonFlipGridWipe4KSchema,
+} from "./compositions/HexagonFlipGridWipe4K";
+import {
+  IsometricCubeCurtainWipe4K,
+  isometricCubeCurtainWipe4KSchema,
+} from "./compositions/IsometricCubeCurtainWipe4K";
+import {
+  RotatingVenetianLouversWipe4K,
+  rotatingVenetianLouversWipe4KSchema,
+} from "./compositions/RotatingVenetianLouversWipe4K";
+import {
+  ConcentricCircleIrisAperture4K,
+  concentricCircleIrisAperture4KSchema,
+} from "./compositions/ConcentricCircleIrisAperture4K";
+import {
+  DiagonalDiamondCascadeWipe4K,
+  diagonalDiamondCascadeWipe4KSchema,
+} from "./compositions/DiagonalDiamondCascadeWipe4K";
+import {
+  RadialExpandingHexRingsWipe4K,
+  radialExpandingHexRingsWipe4KSchema,
+} from "./compositions/RadialExpandingHexRingsWipe4K";
+import {
+  CheckerboardFlipTransition4K,
+  checkerboardFlipTransition4KSchema,
+} from "./compositions/CheckerboardFlipTransition4K";
+import {
+  VerticalPillarDropWipe4K,
+  verticalPillarDropWipe4KSchema,
+} from "./compositions/VerticalPillarDropWipe4K";
+import {
+  TriangleTessellationWipe4K,
+  triangleTessellationWipe4KSchema,
+} from "./compositions/TriangleTessellationWipe4K";
+import {
+  CenterSplitSlidingDoorsWipe4K,
+  centerSplitSlidingDoorsWipe4KSchema,
+} from "./compositions/CenterSplitSlidingDoorsWipe4K";
+import {
   WhiteSilverWaveLoop,
   whiteSilverWaveLoopSchema,
 } from "./compositions/WhiteSilverWaveLoop";
@@ -250,8 +290,8 @@ export const RemotionRoot: React.FC = () => {
           height={2160}
           schema={binaryVoxelStream4KSchema}
           defaultProps={{
-            themePreset: "dark-tech",
-            aspectRatio: "16:9",
+            themePreset: "clean-corporate" as const,
+            aspectRatio: "16:9" as const,
             backgroundColor: "#050B1A",
             primaryColor: "#162033",
             secondaryColor: "#38BDF8",
@@ -270,8 +310,8 @@ export const RemotionRoot: React.FC = () => {
           height={2160}
           schema={rotatingDottedDigitalGlobe4KSchema}
           defaultProps={{
-            themePreset: "dark-tech",
-            aspectRatio: "16:9",
+            themePreset: "clean-corporate" as const,
+            aspectRatio: "16:9" as const,
             backgroundColor: "#050B1A",
             primaryColor: "#38BDF8",
             secondaryColor: "#6366F1",
@@ -290,8 +330,8 @@ export const RemotionRoot: React.FC = () => {
           height={2160}
           schema={hexagonalCyberWaveGrid4KSchema}
           defaultProps={{
-            themePreset: "dark-tech",
-            aspectRatio: "16:9",
+            themePreset: "warm-minimalist" as const,
+            aspectRatio: "16:9" as const,
             backgroundColor: "#050B1A",
             primaryColor: "#162033",
             secondaryColor: "#38BDF8",
@@ -904,6 +944,198 @@ export const RemotionRoot: React.FC = () => {
             accentColor: "#0EA5E9",
             speedMultiplier: 1,
             strokeWidth: 1,
+          }}
+        />
+      </Folder>
+      <Folder name="Transitions">
+        <Composition
+          id="HexagonFlipGridWipe4K"
+          component={HexagonFlipGridWipe4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={hexagonFlipGridWipe4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#1E293B",
+            secondaryColor: "#334155",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="IsometricCubeCurtainWipe4K"
+          component={IsometricCubeCurtainWipe4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={isometricCubeCurtainWipe4KSchema}
+          defaultProps={{
+            themePreset: "clean-corporate",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#FFFFFF",
+            secondaryColor: "#E2E8F0",
+            accentColor: "#2563EB",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="RotatingVenetianLouversWipe4K"
+          component={RotatingVenetianLouversWipe4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={rotatingVenetianLouversWipe4KSchema}
+          defaultProps={{
+            themePreset: "monochrome-luxury",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#18181B",
+            secondaryColor: "#3F3F46",
+            accentColor: "#E4E4E7",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="ConcentricCircleIrisAperture4K"
+          component={ConcentricCircleIrisAperture4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={concentricCircleIrisAperture4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#1E293B",
+            secondaryColor: "#334155",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="DiagonalDiamondCascadeWipe4K"
+          component={DiagonalDiamondCascadeWipe4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={diagonalDiamondCascadeWipe4KSchema}
+          defaultProps={{
+            themePreset: "warm-minimalist",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#F5F0E6",
+            secondaryColor: "#E5DAC8",
+            accentColor: "#D97706",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="RadialExpandingHexRingsWipe4K"
+          component={RadialExpandingHexRingsWipe4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={radialExpandingHexRingsWipe4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#1E293B",
+            secondaryColor: "#334155",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="CheckerboardFlipTransition4K"
+          component={CheckerboardFlipTransition4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={checkerboardFlipTransition4KSchema}
+          defaultProps={{
+            themePreset: "clean-corporate",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#FFFFFF",
+            secondaryColor: "#E2E8F0",
+            accentColor: "#2563EB",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="VerticalPillarDropWipe4K"
+          component={VerticalPillarDropWipe4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={verticalPillarDropWipe4KSchema}
+          defaultProps={{
+            themePreset: "monochrome-luxury",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#18181B",
+            secondaryColor: "#3F3F46",
+            accentColor: "#E4E4E7",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="TriangleTessellationWipe4K"
+          component={TriangleTessellationWipe4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={triangleTessellationWipe4KSchema}
+          defaultProps={{
+            themePreset: "warm-minimalist",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#F5F0E6",
+            secondaryColor: "#E5DAC8",
+            accentColor: "#D97706",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="CenterSplitSlidingDoorsWipe4K"
+          component={CenterSplitSlidingDoorsWipe4K}
+          durationInFrames={90}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={centerSplitSlidingDoorsWipe4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#1E293B",
+            secondaryColor: "#334155",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
           }}
         />
       </Folder>
