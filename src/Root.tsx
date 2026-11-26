@@ -900,7 +900,7 @@ export const RemotionRoot: React.FC = () => {
           height={2160}
           schema={chromaticGlassLouvers4KSchema}
           defaultProps={{
-            themePreset: "clean-corporate" as const,
+            themePreset: "monochrome-luxury" as const,
             aspectRatio: "16:9" as const,
             backgroundColor: "#F8FAFC",
             primaryColor: "#E0F2FE",
@@ -919,7 +919,7 @@ export const RemotionRoot: React.FC = () => {
           height={2160}
           schema={floatingGlassHexagons4KSchema}
           defaultProps={{
-            themePreset: "dark-tech" as const,
+            themePreset: "monochrome-luxury" as const,
             aspectRatio: "16:9" as const,
             backgroundColor: "#F8FAFC",
             primaryColor: "#E0F2FE",
@@ -977,7 +977,7 @@ export const RemotionRoot: React.FC = () => {
           height={2160}
           schema={softPearlBubblesDrift4KSchema}
           defaultProps={{
-            themePreset: "clean-corporate" as const,
+            themePreset: "warm-minimalist" as const,
             aspectRatio: "16:9" as const,
             backgroundColor: "#F8FAFC",
             primaryColor: "#F8FAFC",
@@ -996,7 +996,7 @@ export const RemotionRoot: React.FC = () => {
           height={2160}
           schema={abstractOrigamiHelix4KSchema}
           defaultProps={{
-            themePreset: "clean-corporate" as const,
+            themePreset: "dark-tech" as const,
             aspectRatio: "16:9" as const,
             backgroundColor: "#F8FAFC",
             primaryColor: "#E2E8F0",
@@ -1011,14 +1011,14 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="HexagonFlipGridWipe4K"
           component={HexagonFlipGridWipe4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
           schema={hexagonFlipGridWipe4KSchema}
           defaultProps={{
-            themePreset: "dark-tech",
-            aspectRatio: "16:9",
+            themePreset: "monochrome-luxury" as const,
+            aspectRatio: "16:9" as const,
             backgroundColor: "transparent",
             primaryColor: "#1E293B",
             secondaryColor: "#334155",
@@ -1030,14 +1030,14 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="IsometricCubeCurtainWipe4K"
           component={IsometricCubeCurtainWipe4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
           schema={isometricCubeCurtainWipe4KSchema}
           defaultProps={{
-            themePreset: "clean-corporate",
-            aspectRatio: "16:9",
+            themePreset: "dark-tech" as const,
+            aspectRatio: "16:9" as const,
             backgroundColor: "transparent",
             primaryColor: "#FFFFFF",
             secondaryColor: "#E2E8F0",
@@ -1049,7 +1049,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="RotatingVenetianLouversWipe4K"
           component={RotatingVenetianLouversWipe4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
@@ -1068,7 +1068,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="ConcentricCircleIrisAperture4K"
           component={ConcentricCircleIrisAperture4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
@@ -1087,7 +1087,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="DiagonalDiamondCascadeWipe4K"
           component={DiagonalDiamondCascadeWipe4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
@@ -1106,7 +1106,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="RadialExpandingHexRingsWipe4K"
           component={RadialExpandingHexRingsWipe4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
@@ -1125,7 +1125,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="CheckerboardFlipTransition4K"
           component={CheckerboardFlipTransition4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
@@ -1144,7 +1144,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="VerticalPillarDropWipe4K"
           component={VerticalPillarDropWipe4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
@@ -1163,7 +1163,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="TriangleTessellationWipe4K"
           component={TriangleTessellationWipe4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
@@ -1182,7 +1182,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="CenterSplitSlidingDoorsWipe4K"
           component={CenterSplitSlidingDoorsWipe4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
@@ -1203,7 +1203,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="DiagonalLowPolyShardSweep4K"
           component={DiagonalLowPolyShardSweep4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
@@ -1222,7 +1222,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="OrigamiPaperFoldReveal4K"
           component={OrigamiPaperFoldReveal4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
@@ -1241,7 +1241,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="MultiLayerRibbonWipe4K"
           component={MultiLayerRibbonWipe4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
@@ -1260,7 +1260,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="SteppingStaircaseWipe4K"
           component={SteppingStaircaseWipe4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
@@ -1279,7 +1279,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="PixelBlockDissolveWipe3D4K"
           component={PixelBlockDissolveWipe3D4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
@@ -1298,7 +1298,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="SpinningCrossPlusGridWipe4K"
           component={SpinningCrossPlusGridWipe4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
@@ -1317,7 +1317,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="KineticChevronArrowSweep4K"
           component={KineticChevronArrowSweep4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
@@ -1336,7 +1336,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="DominoTileWaveWipe4K"
           component={DominoTileWaveWipe4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
@@ -1355,7 +1355,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="SpiralVortexTileWipe4K"
           component={SpiralVortexTileWipe4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
@@ -1374,7 +1374,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="GlassSlabRefractionWipe4K"
           component={GlassSlabRefractionWipe4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
@@ -1393,7 +1393,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="HorizontalScanlineBarWipe4K"
           component={HorizontalScanlineBarWipe4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
@@ -1412,7 +1412,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="CornerToCornerWedgeWipe4K"
           component={CornerToCornerWedgeWipe4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
@@ -1431,7 +1431,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="ConcentricOctagonTunnelWipe4K"
           component={ConcentricOctagonTunnelWipe4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
@@ -1450,7 +1450,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="MinimalistArcFanWipe4K"
           component={MinimalistArcFanWipe4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
@@ -1469,7 +1469,7 @@ export const RemotionRoot: React.FC = () => {
         <Composition
           id="ShatterReassembleGridWipe4K"
           component={ShatterReassembleGridWipe4K}
-          durationInFrames={90}
+          durationInFrames={300}
           fps={60}
           width={3840}
           height={2160}
