@@ -1,6 +1,46 @@
 import React from "react";
 import { Composition, Folder } from "remotion";
 import {
+  FloatingGoldGeometricDust4K,
+  floatingGoldGeometricDust4KSchema,
+} from "./compositions/FloatingGoldGeometricDust4K";
+import {
+  HexagonalBokehDepthOverlay4K,
+  hexagonalBokehDepthOverlay4KSchema,
+} from "./compositions/HexagonalBokehDepthOverlay4K";
+import {
+  AscendingGlowingEmbers4K,
+  ascendingGlowingEmbers4KSchema,
+} from "./compositions/AscendingGlowingEmbers4K";
+import {
+  MinimalistWhiteSnowFlakes4K,
+  minimalistWhiteSnowFlakes4KSchema,
+} from "./compositions/MinimalistWhiteSnowFlakes4K";
+import {
+  FloatingGlassShardsOverlay4K,
+  floatingGlassShardsOverlay4KSchema,
+} from "./compositions/FloatingGlassShardsOverlay4K";
+import {
+  DriftingLightOrbsOverlay4K,
+  driftingLightOrbsOverlay4KSchema,
+} from "./compositions/DriftingLightOrbsOverlay4K";
+import {
+  StarfieldWarpParticles4K,
+  starfieldWarpParticles4KSchema,
+} from "./compositions/StarfieldWarpParticles4K";
+import {
+  FloatingRingBokehOverlay4K,
+  floatingRingBokehOverlay4KSchema,
+} from "./compositions/FloatingRingBokehOverlay4K";
+import {
+  ChampagneBubblesRise4K,
+  champagneBubblesRise4KSchema,
+} from "./compositions/ChampagneBubblesRise4K";
+import {
+  GeometricDustMotesSunbeam4K,
+  geometricDustMotesSunbeam4KSchema,
+} from "./compositions/GeometricDustMotesSunbeam4K";
+import {
   CircularRadarSweepHud4K,
   circularRadarSweepHud4KSchema,
 } from "./compositions/CircularRadarSweepHud4K";
@@ -2524,6 +2564,198 @@ export const RemotionRoot: React.FC = () => {
             primaryColor: "#0F172A",
             secondaryColor: "#1E293B",
             accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+      </Folder>
+      <Folder name="ParticlesAlpha">
+        <Composition
+          id="FloatingGoldGeometricDust4K"
+          component={FloatingGoldGeometricDust4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={floatingGoldGeometricDust4KSchema}
+          defaultProps={{
+            themePreset: "monochrome-luxury",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#F3D37A",
+            secondaryColor: "#D4AF37",
+            accentColor: "#FFF3C4",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="HexagonalBokehDepthOverlay4K"
+          component={HexagonalBokehDepthOverlay4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={hexagonalBokehDepthOverlay4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#38BDF8",
+            secondaryColor: "#6366F1",
+            accentColor: "#22D3EE",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="AscendingGlowingEmbers4K"
+          component={AscendingGlowingEmbers4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={ascendingGlowingEmbers4KSchema}
+          defaultProps={{
+            themePreset: "warm-minimalist",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#F97316",
+            secondaryColor: "#EF4444",
+            accentColor: "#FDE047",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="MinimalistWhiteSnowFlakes4K"
+          component={MinimalistWhiteSnowFlakes4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={minimalistWhiteSnowFlakes4KSchema}
+          defaultProps={{
+            themePreset: "clean-corporate",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#FFFFFF",
+            secondaryColor: "#E2E8F0",
+            accentColor: "#BAE6FD",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="FloatingGlassShardsOverlay4K"
+          component={FloatingGlassShardsOverlay4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={floatingGlassShardsOverlay4KSchema}
+          defaultProps={{
+            themePreset: "clean-corporate",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#E0F2FE",
+            secondaryColor: "#93C5FD",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="DriftingLightOrbsOverlay4K"
+          component={DriftingLightOrbsOverlay4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={driftingLightOrbsOverlay4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#38BDF8",
+            secondaryColor: "#818CF8",
+            accentColor: "#22D3EE",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="StarfieldWarpParticles4K"
+          component={StarfieldWarpParticles4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={starfieldWarpParticles4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#FFFFFF",
+            secondaryColor: "#38BDF8",
+            accentColor: "#22D3EE",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="FloatingRingBokehOverlay4K"
+          component={FloatingRingBokehOverlay4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={floatingRingBokehOverlay4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#38BDF8",
+            secondaryColor: "#6366F1",
+            accentColor: "#22D3EE",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="ChampagneBubblesRise4K"
+          component={ChampagneBubblesRise4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={champagneBubblesRise4KSchema}
+          defaultProps={{
+            themePreset: "monochrome-luxury",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#F3D37A",
+            secondaryColor: "#FAF6EE",
+            accentColor: "#D4AF37",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="GeometricDustMotesSunbeam4K"
+          component={GeometricDustMotesSunbeam4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={geometricDustMotesSunbeam4KSchema}
+          defaultProps={{
+            themePreset: "warm-minimalist",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#FDE68A",
+            secondaryColor: "#F59E0B",
+            accentColor: "#FEF3C7",
             speedMultiplier: 1,
             strokeWidth: 2,
           }}
