@@ -1,6 +1,146 @@
 import React from "react";
 import { Composition, Folder } from "remotion";
 import {
+  CircularRadarSweepHud4K,
+  circularRadarSweepHud4KSchema,
+} from "./compositions/CircularRadarSweepHud4K";
+import {
+  WireframeGlobeHologram3D4K,
+  wireframeGlobeHologram3D4KSchema,
+} from "./compositions/WireframeGlobeHologram3D4K";
+import {
+  TopographicWireframeTerrainScan4K,
+  topographicWireframeTerrainScan4KSchema,
+} from "./compositions/TopographicWireframeTerrainScan4K";
+import {
+  ConcentricSciFiTargetReticle4K,
+  concentricSciFiTargetReticle4KSchema,
+} from "./compositions/ConcentricSciFiTargetReticle4K";
+import {
+  GyroscopeCompassSphere3D4K,
+  gyroscopeCompassSphere3D4KSchema,
+} from "./compositions/GyroscopeCompassSphere3D4K";
+import {
+  DottedWorldMapFlatGrid4K,
+  dottedWorldMapFlatGrid4KSchema,
+} from "./compositions/DottedWorldMapFlatGrid4K";
+import {
+  IsometricTacticalFloorGrid4K,
+  isometricTacticalFloorGrid4KSchema,
+} from "./compositions/IsometricTacticalFloorGrid4K";
+import {
+  BiometricHexagonScanner4K,
+  biometricHexagonScanner4KSchema,
+} from "./compositions/BiometricHexagonScanner4K";
+import {
+  OrbitingSatelliteConstellation4K,
+  orbitingSatelliteConstellation4KSchema,
+} from "./compositions/OrbitingSatelliteConstellation4K";
+import {
+  CubeWireframeBoundingBox3D4K,
+  cubeWireframeBoundingBox3D4KSchema,
+} from "./compositions/CubeWireframeBoundingBox3D4K";
+import {
+  HorizontalTelemetryRulerScale4K,
+  horizontalTelemetryRulerScale4KSchema,
+} from "./compositions/HorizontalTelemetryRulerScale4K";
+import {
+  PulsingSonarWaveRings4K,
+  pulsingSonarWaveRings4KSchema,
+} from "./compositions/PulsingSonarWaveRings4K";
+import {
+  HelixScannerTunnel3D4K,
+  helixScannerTunnel3D4KSchema,
+} from "./compositions/HelixScannerTunnel3D4K";
+import {
+  MinimalistLoadingSpinner3D4K,
+  minimalistLoadingSpinner3D4KSchema,
+} from "./compositions/MinimalistLoadingSpinner3D4K";
+import {
+  CornerHudFrameOverlay4K,
+  cornerHudFrameOverlay4KSchema,
+} from "./compositions/CornerHudFrameOverlay4K";
+import {
+  IsometricBarChartLoop4K,
+  isometricBarChartLoop4KSchema,
+} from "./compositions/IsometricBarChartLoop4K";
+import {
+  CircularAudioEqualizerRing4K,
+  circularAudioEqualizerRing4KSchema,
+} from "./compositions/CircularAudioEqualizerRing4K";
+import {
+  SegmentedDonutProgressRings4K,
+  segmentedDonutProgressRings4KSchema,
+} from "./compositions/SegmentedDonutProgressRings4K";
+import {
+  MultiLayerSineWaveGraph4K,
+  multiLayerSineWaveGraph4KSchema,
+} from "./compositions/MultiLayerSineWaveGraph4K";
+import {
+  LinearEqualizerSpectrumBars4K,
+  linearEqualizerSpectrumBars4KSchema,
+} from "./compositions/LinearEqualizerSpectrumBars4K";
+import {
+  FloatingPieChartSegments4K,
+  floatingPieChartSegments4KSchema,
+} from "./compositions/FloatingPieChartSegments4K";
+import {
+  HelixDnaDataStrand4K,
+  helixDnaDataStrand4KSchema,
+} from "./compositions/HelixDnaDataStrand4K";
+import {
+  RadialGaugeDialLoop4K,
+  radialGaugeDialLoop4KSchema,
+} from "./compositions/RadialGaugeDialLoop4K";
+import {
+  ScatterPlotCube3D4K,
+  scatterPlotCube3D4KSchema,
+} from "./compositions/ScatterPlotCube3D4K";
+import {
+  FlowingRibbonDataStream4K,
+  flowingRibbonDataStream4KSchema,
+} from "./compositions/FlowingRibbonDataStream4K";
+import {
+  HexagonEmblemTechBarLowerThird4K,
+  hexagonEmblemTechBarLowerThird4KSchema,
+} from "./compositions/HexagonEmblemTechBarLowerThird4K";
+import {
+  TargetPointerCalloutPlate4K,
+  targetPointerCalloutPlate4KSchema,
+} from "./compositions/TargetPointerCalloutPlate4K";
+import {
+  CornerBracketHudLowerThird4K,
+  cornerBracketHudLowerThird4KSchema,
+} from "./compositions/CornerBracketHudLowerThird4K";
+import {
+  NestedGyroscopeAngledPlate4K,
+  nestedGyroscopeAngledPlate4KSchema,
+} from "./compositions/NestedGyroscopeAngledPlate4K";
+import {
+  ExpandingWireframeBoxPlate4K,
+  expandingWireframeBoxPlate4KSchema,
+} from "./compositions/ExpandingWireframeBoxPlate4K";
+import {
+  DualRowModularTechTabs4K,
+  dualRowModularTechTabs4KSchema,
+} from "./compositions/DualRowModularTechTabs4K";
+import {
+  CircularRadarBadgeCallout4K,
+  circularRadarBadgeCallout4KSchema,
+} from "./compositions/CircularRadarBadgeCallout4K";
+import {
+  IsometricCubeCalloutPin4K,
+  isometricCubeCalloutPin4KSchema,
+} from "./compositions/IsometricCubeCalloutPin4K";
+import {
+  GlitchFreeDigitalBarReveal4K,
+  glitchFreeDigitalBarReveal4KSchema,
+} from "./compositions/GlitchFreeDigitalBarReveal4K";
+import {
+  MinimalistLeftEdgeDockedTag4K,
+  minimalistLeftEdgeDockedTag4KSchema,
+} from "./compositions/MinimalistLeftEdgeDockedTag4K";
+import {
   SpinningCrystalEmblemLowerThird4K,
   spinningCrystalEmblemLowerThird4KSchema,
 } from "./compositions/SpinningCrystalEmblemLowerThird4K";
@@ -451,7 +591,7 @@ export const RemotionRoot: React.FC = () => {
           schema={infiniteWireframeDataTunnel4KSchema}
           defaultProps={{
             themePreset: "monochrome-luxury" as const,
-            aspectRatio: "16:9" as const,
+            aspectRatio: "9:16" as const,
             backgroundColor: "#040917",
             primaryColor: "#38BDF8",
             secondaryColor: "#6366F1",
@@ -1713,6 +1853,677 @@ export const RemotionRoot: React.FC = () => {
             primaryColor: "#18181B",
             secondaryColor: "#27272A",
             accentColor: "#D4AF37",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+      </Folder>
+      <Folder name="TechAlpha">
+        <Composition
+          id="HexagonEmblemTechBarLowerThird4K"
+          component={HexagonEmblemTechBarLowerThird4K}
+          durationInFrames={180}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={hexagonEmblemTechBarLowerThird4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="TargetPointerCalloutPlate4K"
+          component={TargetPointerCalloutPlate4K}
+          durationInFrames={180}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={targetPointerCalloutPlate4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="CornerBracketHudLowerThird4K"
+          component={CornerBracketHudLowerThird4K}
+          durationInFrames={180}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={cornerBracketHudLowerThird4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="NestedGyroscopeAngledPlate4K"
+          component={NestedGyroscopeAngledPlate4K}
+          durationInFrames={180}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={nestedGyroscopeAngledPlate4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="ExpandingWireframeBoxPlate4K"
+          component={ExpandingWireframeBoxPlate4K}
+          durationInFrames={180}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={expandingWireframeBoxPlate4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="DualRowModularTechTabs4K"
+          component={DualRowModularTechTabs4K}
+          durationInFrames={180}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={dualRowModularTechTabs4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="CircularRadarBadgeCallout4K"
+          component={CircularRadarBadgeCallout4K}
+          durationInFrames={180}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={circularRadarBadgeCallout4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="IsometricCubeCalloutPin4K"
+          component={IsometricCubeCalloutPin4K}
+          durationInFrames={180}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={isometricCubeCalloutPin4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="GlitchFreeDigitalBarReveal4K"
+          component={GlitchFreeDigitalBarReveal4K}
+          durationInFrames={180}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={glitchFreeDigitalBarReveal4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="MinimalistLeftEdgeDockedTag4K"
+          component={MinimalistLeftEdgeDockedTag4K}
+          durationInFrames={180}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={minimalistLeftEdgeDockedTag4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+      </Folder>
+      <Folder name="ChartsAlpha">
+        <Composition
+          id="IsometricBarChartLoop4K"
+          component={IsometricBarChartLoop4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={isometricBarChartLoop4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="CircularAudioEqualizerRing4K"
+          component={CircularAudioEqualizerRing4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={circularAudioEqualizerRing4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="SegmentedDonutProgressRings4K"
+          component={SegmentedDonutProgressRings4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={segmentedDonutProgressRings4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="MultiLayerSineWaveGraph4K"
+          component={MultiLayerSineWaveGraph4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={multiLayerSineWaveGraph4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="LinearEqualizerSpectrumBars4K"
+          component={LinearEqualizerSpectrumBars4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={linearEqualizerSpectrumBars4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="FloatingPieChartSegments4K"
+          component={FloatingPieChartSegments4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={floatingPieChartSegments4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="HelixDnaDataStrand4K"
+          component={HelixDnaDataStrand4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={helixDnaDataStrand4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="RadialGaugeDialLoop4K"
+          component={RadialGaugeDialLoop4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={radialGaugeDialLoop4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="ScatterPlotCube3D4K"
+          component={ScatterPlotCube3D4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={scatterPlotCube3D4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="FlowingRibbonDataStream4K"
+          component={FlowingRibbonDataStream4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={flowingRibbonDataStream4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+      </Folder>
+      <Folder name="ScannersAlpha">
+        <Composition
+          id="CircularRadarSweepHud4K"
+          component={CircularRadarSweepHud4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={circularRadarSweepHud4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="WireframeGlobeHologram3D4K"
+          component={WireframeGlobeHologram3D4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={wireframeGlobeHologram3D4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="TopographicWireframeTerrainScan4K"
+          component={TopographicWireframeTerrainScan4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={topographicWireframeTerrainScan4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="ConcentricSciFiTargetReticle4K"
+          component={ConcentricSciFiTargetReticle4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={concentricSciFiTargetReticle4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="GyroscopeCompassSphere3D4K"
+          component={GyroscopeCompassSphere3D4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={gyroscopeCompassSphere3D4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="DottedWorldMapFlatGrid4K"
+          component={DottedWorldMapFlatGrid4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={dottedWorldMapFlatGrid4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="IsometricTacticalFloorGrid4K"
+          component={IsometricTacticalFloorGrid4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={isometricTacticalFloorGrid4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="BiometricHexagonScanner4K"
+          component={BiometricHexagonScanner4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={biometricHexagonScanner4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="OrbitingSatelliteConstellation4K"
+          component={OrbitingSatelliteConstellation4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={orbitingSatelliteConstellation4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="CubeWireframeBoundingBox3D4K"
+          component={CubeWireframeBoundingBox3D4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={cubeWireframeBoundingBox3D4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="HorizontalTelemetryRulerScale4K"
+          component={HorizontalTelemetryRulerScale4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={horizontalTelemetryRulerScale4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="PulsingSonarWaveRings4K"
+          component={PulsingSonarWaveRings4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={pulsingSonarWaveRings4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="HelixScannerTunnel3D4K"
+          component={HelixScannerTunnel3D4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={helixScannerTunnel3D4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="MinimalistLoadingSpinner3D4K"
+          component={MinimalistLoadingSpinner3D4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={minimalistLoadingSpinner3D4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="CornerHudFrameOverlay4K"
+          component={CornerHudFrameOverlay4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={cornerHudFrameOverlay4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
             speedMultiplier: 1,
             strokeWidth: 2,
           }}
