@@ -1,6 +1,46 @@
 import React from "react";
 import { Composition, Folder } from "remotion";
 import {
+  MetallicConfettiRainLoop4K,
+  metallicConfettiRainLoop4KSchema,
+} from "./compositions/MetallicConfettiRainLoop4K";
+import {
+  GoldSilverLuxuryConfetti4K,
+  goldSilverLuxuryConfetti4KSchema,
+} from "./compositions/GoldSilverLuxuryConfetti4K";
+import {
+  ConfettiBurstCannonOneShot4K,
+  confettiBurstCannonOneShot4KSchema,
+} from "./compositions/ConfettiBurstCannonOneShot4K";
+import {
+  GlowingNeonGeometricFrame4K,
+  glowingNeonGeometricFrame4KSchema,
+} from "./compositions/GlowingNeonGeometricFrame4K";
+import {
+  LuxuryGoldCornerOrnaments4K,
+  luxuryGoldCornerOrnaments4KSchema,
+} from "./compositions/LuxuryGoldCornerOrnaments4K";
+import {
+  FloatingStreamersRibbons3D4K,
+  floatingStreamersRibbons3D4KSchema,
+} from "./compositions/FloatingStreamersRibbons3D4K";
+import {
+  PrismLightLeakEdgeOverlay4K,
+  prismLightLeakEdgeOverlay4KSchema,
+} from "./compositions/PrismLightLeakEdgeOverlay4K";
+import {
+  GeometricSparkleStarbursts4K,
+  geometricSparkleStarbursts4KSchema,
+} from "./compositions/GeometricSparkleStarbursts4K";
+import {
+  MinimalistPipFrame3D4K,
+  minimalistPipFrame3D4KSchema,
+} from "./compositions/MinimalistPipFrame3D4K";
+import {
+  FestivalGeometricBuntingGarland4K,
+  festivalGeometricBuntingGarland4KSchema,
+} from "./compositions/FestivalGeometricBuntingGarland4K";
+import {
   FloatingGoldGeometricDust4K,
   floatingGoldGeometricDust4KSchema,
 } from "./compositions/FloatingGoldGeometricDust4K";
@@ -2731,8 +2771,8 @@ export const RemotionRoot: React.FC = () => {
           height={2160}
           schema={champagneBubblesRise4KSchema}
           defaultProps={{
-            themePreset: "monochrome-luxury",
-            aspectRatio: "16:9",
+            themePreset: "dark-tech" as const,
+            aspectRatio: "16:9" as const,
             backgroundColor: "transparent",
             primaryColor: "#F3D37A",
             secondaryColor: "#FAF6EE",
@@ -2750,12 +2790,204 @@ export const RemotionRoot: React.FC = () => {
           height={2160}
           schema={geometricDustMotesSunbeam4KSchema}
           defaultProps={{
-            themePreset: "warm-minimalist",
-            aspectRatio: "16:9",
+            themePreset: "dark-tech" as const,
+            aspectRatio: "16:9" as const,
             backgroundColor: "transparent",
             primaryColor: "#FDE68A",
             secondaryColor: "#F59E0B",
             accentColor: "#FEF3C7",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+      </Folder>
+      <Folder name="CelebrationAlpha">
+        <Composition
+          id="MetallicConfettiRainLoop4K"
+          component={MetallicConfettiRainLoop4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={metallicConfettiRainLoop4KSchema}
+          defaultProps={{
+            themePreset: "warm-minimalist",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#F59E0B",
+            secondaryColor: "#EC4899",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="GoldSilverLuxuryConfetti4K"
+          component={GoldSilverLuxuryConfetti4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={goldSilverLuxuryConfetti4KSchema}
+          defaultProps={{
+            themePreset: "monochrome-luxury",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#D4AF37",
+            secondaryColor: "#E4E4E7",
+            accentColor: "#F3D37A",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="ConfettiBurstCannonOneShot4K"
+          component={ConfettiBurstCannonOneShot4K}
+          durationInFrames={180}
+          fps={60}
+          width={3840}
+          height={2160}
+          schema={confettiBurstCannonOneShot4KSchema}
+          defaultProps={{
+            themePreset: "monochrome-luxury",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#D4AF37",
+            secondaryColor: "#38BDF8",
+            accentColor: "#F43F5E",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="GlowingNeonGeometricFrame4K"
+          component={GlowingNeonGeometricFrame4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={glowingNeonGeometricFrame4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#6366F1",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="LuxuryGoldCornerOrnaments4K"
+          component={LuxuryGoldCornerOrnaments4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={luxuryGoldCornerOrnaments4KSchema}
+          defaultProps={{
+            themePreset: "monochrome-luxury",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#D4AF37",
+            secondaryColor: "#F3D37A",
+            accentColor: "#FFFBEB",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="FloatingStreamersRibbons3D4K"
+          component={FloatingStreamersRibbons3D4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={floatingStreamersRibbons3D4KSchema}
+          defaultProps={{
+            themePreset: "monochrome-luxury",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#D4AF37",
+            secondaryColor: "#38BDF8",
+            accentColor: "#F472B6",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="PrismLightLeakEdgeOverlay4K"
+          component={PrismLightLeakEdgeOverlay4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={prismLightLeakEdgeOverlay4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#38BDF8",
+            secondaryColor: "#EC4899",
+            accentColor: "#F59E0B",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="GeometricSparkleStarbursts4K"
+          component={GeometricSparkleStarbursts4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={geometricSparkleStarbursts4KSchema}
+          defaultProps={{
+            themePreset: "monochrome-luxury",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#F3D37A",
+            secondaryColor: "#D4AF37",
+            accentColor: "#FFFFFF",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="MinimalistPipFrame3D4K"
+          component={MinimalistPipFrame3D4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={minimalistPipFrame3D4KSchema}
+          defaultProps={{
+            themePreset: "dark-tech",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#0F172A",
+            secondaryColor: "#1E293B",
+            accentColor: "#38BDF8",
+            speedMultiplier: 1,
+            strokeWidth: 2,
+          }}
+        />
+        <Composition
+          id="FestivalGeometricBuntingGarland4K"
+          component={FestivalGeometricBuntingGarland4K}
+          durationInFrames={300}
+          fps={30}
+          width={3840}
+          height={2160}
+          schema={festivalGeometricBuntingGarland4KSchema}
+          defaultProps={{
+            themePreset: "warm-minimalist",
+            aspectRatio: "16:9",
+            backgroundColor: "transparent",
+            primaryColor: "#F59E0B",
+            secondaryColor: "#E07A5F",
+            accentColor: "#D4AF37",
             speedMultiplier: 1,
             strokeWidth: 2,
           }}
